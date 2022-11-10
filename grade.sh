@@ -14,4 +14,4 @@ if -f student-submission/ListExamples.java; then
         echo "Compilation error."
         exit 1
     java TestListExamples
-
+fi
