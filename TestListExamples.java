@@ -1,8 +1,10 @@
 import static org.junit.Assert.*;
 import org.junit.*;
+import java.util.ArrayList;
+import java.util.List;
 
-public class EvenLengthChecker implements StringChecker {
-  boolean checkString(String s) {
+class EvenLengthChecker implements StringChecker {
+  public  boolean checkString(String s) {
     return s.length()%2==0;
   }
 }
@@ -17,7 +19,7 @@ public class TestListExamples {
     list.add("ab");
     list.add("abc");
     list.add("abcd");
-    assertEquals(ListExamplesCorrect.filter(list, ec), ListExamples.filter(list, ec));
+    assertEquals(ListExamplesCorrect.filter(list, elc), ListExamples.filter(list, elc));
   }
 
   @Test
@@ -29,7 +31,7 @@ public class TestListExamples {
     list.add("ab");
     list.add("abc");
     list.add("abcd");
-    list2 = list.clone();
-    assertEquals(ListExamplesCorrect.merge(list, list2), ListExamples.merge(list, list2));
+    assertEquals(ListExamplesCorrect.merge(list, list), ListExamples.merge(list, list));
   }
+
 }
