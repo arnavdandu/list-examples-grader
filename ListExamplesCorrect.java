@@ -1,8 +1,6 @@
 import java.util.ArrayList;
 import java.util.List;
 
-interface StringChecker { boolean checkString(String s); }
-
 class ListExamplesCorrect {
 
   // Returns a new list that has all the elements of the input list for which
